@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>新手指南 · WorkBuddy 0→1 上手 SOP</title>
+<meta name="description" content="WorkBuddy 新用户上手指南：12 步上手、4 项首次配置、标准指令模板、界面速查、4 条验收标准与常见卡点处理。零点引擎（腾讯云合作伙伴）整理。">
+<link rel="icon" href="assets/wb-logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <img src="assets/wb-logo.svg" alt="WorkBuddy">
+      <span class="brand-txt"><strong>WorkBuddy</strong><span>数字员工 · 企业级 AI 工作台</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#what">是什么</a>
+      <a href="index.html#features">能做什么</a>
+      <a href="index.html#scenarios">谁在用</a>
+      <a href="index.html#industry">行业方案</a>
+      <a href="index.html#videos">看图与视频</a>
+      <a href="index.html#buy">怎么买</a>
+      <a href="index.html#faq">常见问题</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="展开导航">☰</button>
+    <a class="nav-cta" href="https://cloud.tencent.com/act/pro/workbuddy" target="_blank" rel="noopener">免费开始用 ↗</a>
+  </div>
+</header>
+
+<!-- ============ 快捷胶囊 ============ -->
+<div class="quickbar" role="navigation" aria-label="快捷入口">
+  <div class="wrap quickbar-in">
+    <span class="qb-label">从这里开始</span>
+    <div class="qb-pills">
+      <a class="qb-pill is-current" href="guide.html" aria-current="page"><i>01</i><b>新手指南</b><small>0→1 上手 SOP</small></a>
+      <a class="qb-pill" href="index.html#buy-guide"><i>02</i><b>采购指南</b><small>四步完成下单</small></a>
+      <a class="qb-pill" href="training.html"><i>03</i><b>培训需求</b><small>填一份需求清单</small></a>
+      <a class="qb-pill" href="coaching.html"><i>04</i><b>陪跑需求</b><small>样板场景共创</small></a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============ 页头 ============ -->
+<section class="guide-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">介绍首页</a><span>／</span><b>新手指南</b></div>
+    <span class="hero-badge"><i></i> GUIDE · 新用户 0→1 上手 SOP</span>
+    <h1>别研究教程。<br>找一个正好要做的活，<em>让它先出计划、再动手</em></h1>
+    <p class="guide-lead">
+      第一次使用的目标不是「学完产品」，而是<strong>产出一个能用的交付物</strong>。<br>
+      这一页把账号开通后的第一次派活拆成 <b>12 步</b>，每步都有一个可检查的验收点。
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://cloud.tencent.com/act/pro/workbuddy" target="_blank" rel="noopener">免费开始用 ↗</a>
+      <a class="btn btn-ghost" href="#g-steps">直接看 12 步 ↓</a>
+      <a class="btn btn-ghost" href="#g-check">跳到验收清单 ↓</a>
+    </div>
+    <div class="g-stats">
+      <div class="g-stat"><b>12</b><span>步上手流程</span></div>
+      <div class="g-stat"><b>4</b><span>项首次配置</span></div>
+      <div class="g-stat"><b>5<i>分钟</i></b><span>一次配完，之后不改</span></div>
+      <div class="g-stat"><b>4</b><span>条验收标准</span></div>
+    </div>
+    <p class="small guide-hero-note">本页是操作方法与验收标准，不是产品规格书或报价单；功能名称与入口位置以当前客户端与管理员配置为准。</p>
+  </div>
+</section>
+
+<!-- ============ 01 十二步 ============ -->
+<section class="sec g-sec" id="g-steps">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">01 / 十二步上手</div>
+      <h2>每走一步，都能查一步</h2>
+      <p class="lead">前 3 步是「能跑起来」，4–7 步是「一次配好」，8–12 步是「真的干出活」。总验收只有一个：<b>第 10 步拿到一个真实交付物</b>，不是一段问答。</p>
+    </div>
+    <div class="g-steps" id="gSteps"></div>
+    <div class="note"><b>总验收</b>：12 步全走完，且第 10 步拿到一个真实交付物并归档。只补缺失的那一步，不重跑全流程。</div>
+  </div>
+</section>
+
+<!-- ============ 02 首次配置 ============ -->
+<section class="sec g-sec" id="g-config">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">02 / 首次配置四项</div>
+      <h2>5 分钟配完，决定后面省不省事</h2>
+      <p class="lead">第一次登录后一次配完，之后不再改动，除非工作方式变了。这四项直接决定它会不会「听懂你」。</p>
+    </div>
+    <div class="g-table-wrap">
+      <table class="g-table">
+        <thead><tr><th>配置项</th><th>建议配置</th><th>解决的问题</th></tr></thead>
+        <tbody>
+          <tr><td><b>自定义指令</b></td><td>写明「动手前多想几步、多问几个问题，需求确认清楚再开始」</td><td>复杂任务被理解歪</td></tr>
+          <tr><td><b>生成对话记忆</b></td><td>开启</td><td>每次都要重讲背景</td></tr>
+          <tr><td><b>上下文管理</b></td><td>按客户端可选项拉长，或关闭自动截断</td><td>聊到后半段忘了前面</td></tr>
+          <tr><td><b>记忆与进化</b></td><td>开启</td><td>每次都要重新介绍「我是谁、干什么、什么风格」</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><b>量化建议</b>：四项在第一次登录后 <b>5 分钟内</b>一次配完。配置路径以当前客户端实际界面为准。</div>
+  </div>
+</section>
+
+<!-- ============ 03 指令模板 ============ -->
+<section class="sec g-sec" id="g-prompt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">03 / 复杂任务的标准指令</div>
+      <h2>不会写指令？照着这五个字段填</h2>
+      <p class="lead">从空白输入框开始最容易卡住。更稳的做法是：进技能模板，只改与自己需求相关的字段。</p>
+    </div>
+    <div class="g-prompt-grid">
+      <div class="g-code-box">
+        <div class="g-code-hd"><b>标准指令模板</b><button type="button" class="g-copy" id="copyPrompt">复制模板</button></div>
+        <pre class="g-code" id="promptText">【目标】一句话说清要什么交付物（格式 / 用途 / 给谁看）
+【背景】业务背景、已有资料（指向工作空间或资料库里的文件）
+【约束】必须遵守的口径、禁止的做法、篇幅或范围
+【确认】先列执行步骤与方案选项，等我确认后再动手
+【验收】列出 3 条可检查的完成标准</pre>
+        <p class="small">复制后把方括号里的内容替换成自己的任务，即可提交。</p>
+      </div>
+      <div class="g-mode">
+        <h3>任务该用哪种模式</h3>
+        <div class="g-mode-row"><span class="g-mode-tag">计划</span><div><b>涉及 ≥ 2 个系统 / ≥ 3 个文件 / 产出 ≥ 5 页</b><p>先出步骤，确认后执行。这一步能挡掉大部分「做出来不是我要的」。</p></div></div>
+        <div class="g-mode-row"><span class="g-mode-tag is-quiet">仅问答</span><div><b>单个问题、找思路、问「这个该怎么处理」</b><p>不触发执行，用来想清楚再派活。</p></div></div>
+        <div class="note" style="margin-top:18px"><b>关键顺序</b>：先列执行步骤与方案选项 → 你审步骤、改方案 → 确认后才执行。<br>连续两次卡在第 10 步，说明任务描述不够具体，回到模板重写【目标】与【验收】。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 界面速查 ============ -->
+<section class="sec g-sec" id="g-ui">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">04 / 界面速查</div>
+      <h2>按位置找功能，不用背菜单</h2>
+      <p class="lead">不知道从哪下手时，先选场景；不想自己写指令时，进技能模板。</p>
+    </div>
+    <div class="g-ui-grid" id="gUi"></div>
+    <p class="small" style="margin-top:20px">功能名称、入口位置与可选模型以当前客户端与管理员配置为准；界面更新时以实际页面为准。</p>
+  </div>
+</section>
+
+<!-- ============ 05 验收清单 ============ -->
+<section class="sec g-sec" id="g-check">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">05 / 四条验收标准</div>
+      <h2>能勾满这四条，就算上手了</h2>
+      <p class="lead">客户成功验收用。勾选状态会保存在本机浏览器，关掉页面下次还在。</p>
+    </div>
+    <div class="g-check-box">
+      <div class="g-progress-hd"><b>上手进度</b><span id="gProgressTxt">0 / 4 项已完成</span></div>
+      <div class="g-progress"><i id="gProgressBar"></i></div>
+      <div class="g-checks" id="gChecks">
+        <label class="chk"><input type="checkbox" data-check="0"><span class="ck"></span><span>四项首次配置全部开启（自定义指令 / 对话记忆 / 上下文管理 / 记忆与进化）</span></label>
+        <label class="chk"><input type="checkbox" data-check="1"><span class="ck"></span><span>至少使用过 <b>1 次计划模式</b>，并经历过「审步骤 → 改方案 → 执行」全过程</span></label>
+        <label class="chk"><input type="checkbox" data-check="2"><span class="ck"></span><span>产出 <b>≥ 1 个真实交付物</b>并归档到工作空间 / 项目</span></label>
+        <label class="chk"><input type="checkbox" data-check="3"><span class="ck"></span><span>能独立完成一次「选场景 → 改模板 → 提交」，全程<b>不依赖他人代写指令</b></span></label>
+      </div>
+      <p class="small" style="margin-top:18px">不通过的处理：只补缺失的那一步，不重跑全流程。</p>
+      <button type="button" class="g-reset" id="gReset">清空勾选</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 卡点 ============ -->
+<section class="sec g-sec" id="g-stuck">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">06 / 三个常见卡点</div>
+      <h2>卡住了，先看原因再改方法</h2>
+    </div>
+    <div class="g-table-wrap">
+      <table class="g-table">
+        <thead><tr><th>卡点</th><th>原因</th><th>处理</th></tr></thead>
+        <tbody>
+          <tr><td><b>「它做出来的不是我要的」</b></td><td>需求在动手前没确认</td><td>改用计划模式，先看步骤再放行</td></tr>
+          <tr><td><b>「不知道指令怎么写」</b></td><td>从空白输入框开始</td><td>进技能模板，改字段即可，不要从零写</td></tr>
+          <tr><td><b>「聊久了它忘了前面」</b></td><td>上下文被截断 / 对话记忆未开</td><td>检查首次配置第 2、3 项，并把关键结论写进文件或项目</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 进阶（折叠） ============ -->
+<section class="sec g-sec" id="g-advanced">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">07 / 进阶阅读</div>
+      <h2>用一份母文档，出三版 PPT</h2>
+      <p class="lead">方法源自第三方教程，案例为虚构演示，<b>仅作方法参考</b>，不代表 WorkBuddy 官方教程，也不构成交付效果承诺。</p>
+    </div>
+    <details class="fold g-fold">
+      <summary>展开：PPT 万能公式与四步做法 <span>（点击展开）</span></summary>
+      <div class="fold-body">
+        <div class="g-formula">一份 PPT ＝ 母文档 ＋ 汇报方法 ＋ 汇报对象 ＋ 汇报目的</div>
+        <p>核心不是「会点 PPT 按钮」，而是把一次复盘做成三种受众的版本，且全程只用一份母文档驱动。<b>PPT 不是内容库，只是这一次沟通的版本；真正要维护的是背后那份母文档。</b></p>
+        <div class="g-table-wrap" style="margin-top:18px">
+          <table class="g-table">
+            <thead><tr><th>步</th><th>动作</th><th>验收点</th></tr></thead>
+            <tbody>
+              <tr><td>1 母文档</td><td>读工作空间全量文件，整理成含 10 项结构 + 4 附录的复盘母文档，关键数字标来源</td><td>母文档 ≥ 10 项、数字溯源、不编造矛盾</td></tr>
+              <tr><td>2 出大纲</td><td>先给逐页标题 / 大纲，确认结构再生成</td><td>三版目录与对象 / 目的一一对应</td></tr>
+              <tr><td>3 分版生成</td><td>管理层 5 页（结论先行）/ 团队 12 页（行动导向）/ 客户 7+1 页（按目标重组）</td><td>页数、对象、目的一一对应</td></tr>
+              <tr><td>4 校核导出</td><td>人工校核数据口径与品牌标识，导出 .pptx</td><td>客户版含「数据口径与限制」附录</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top:16px">来源：第三方教程《WorkBuddy 做 PPT 的万能公式》（公众号「明天的AI」，2026-10-26）方法提炼。对外演示以你方当前默认 / 授权模型为准；品牌标识引用官方资产，不截取第三方图片。</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ 08 边界 ============ -->
+<section class="sec g-sec" id="g-boundary">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">08 / 边界与免责</div>
+      <h2>哪些话，这一页不说</h2>
+    </div>
+    <div class="g-boundary">
+      <div class="g-bcard"><b>不是规格书</b><p>本页是操作方法与验收标准，不是产品规格书、报价单或效果承诺。</p></div>
+      <div class="g-bcard"><b>入口会变</b><p>功能名称、入口位置、可选模型以当前客户端与管理员配置为准；界面更新时以实际页面为准。</p></div>
+      <div class="g-bcard"><b>不谈商务数字</b><p>不引用任何价格、积分、活动、配额与耗时数据。涉及商务与报价，转对应销售 / 客户成功负责人，按正式测算流程处理。</p></div>
+      <div class="g-bcard"><b>来源标注</b><p>方法整理自第三方公开体验文（公众号「Git源宝」，2026-09-24）与第三方 PPT 教程（2026-10-26），已剔除其时点数字；对外引用原文观点须注明出处与日期。</p></div>
+    </div>
+    <div class="g-next">
+      <div><b>下一步走哪条路</b><p>想先看懂产品 → 回介绍首页；准备下单 → 看采购四步；要组织培训或陪跑 → 填一份需求清单。</p></div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="training.html">看培训需求 ↗</a>
+        <a class="btn btn-ghost" href="coaching.html">看陪跑需求 ↗</a>
+        <a class="btn btn-ghost" href="index.html#buy-guide">看采购指南 ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="assets/lingdian-logo.svg" alt="零点引擎">
+        <p>本站由 <b style="color:var(--muted)">零点引擎（腾讯云 &amp; WorkBuddy 代理合作伙伴）</b> 整理，用于客户选型、方案宣讲与内部培训。WorkBuddy 为腾讯云产品，商标与产品权益归腾讯所有。</p>
+      </div>
+      <div>
+        <h5>快速入口</h5>
+        <ul>
+          <li><a href="index.html">介绍首页</a></li>
+          <li><a href="index.html#buy-guide">采购四步引导</a></li>
+          <li><a href="training.html">培训需求</a></li>
+          <li><a href="coaching.html">陪跑需求</a></li>
+          <li><a href="https://workbuddy.cn/docs/workbuddy/Overview" target="_blank" rel="noopener">官方文档 ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 零点引擎 · WorkBuddy 介绍页（合作伙伴整理，非官方站点）</span>
+      <span>本页为操作方法与验收标准，不构成收益或效果承诺。</span>
+    </div>
+  </div>
+</footer>
+
+<script src="page.js"></script>
+</body>
+</html>

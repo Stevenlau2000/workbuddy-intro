@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>陪跑需求 · WorkBuddy 样板场景共创</title>
+<meta name="description" content="WorkBuddy 陪跑需求梳理：培训与陪跑的区别、FDE 四件套方法骨架、四步共创 SOP、可一键复制的需求清单模板与边界说明。零点引擎（腾讯云合作伙伴）整理。">
+<link rel="icon" href="assets/wb-logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <img src="assets/wb-logo.svg" alt="WorkBuddy">
+      <span class="brand-txt"><strong>WorkBuddy</strong><span>数字员工 · 企业级 AI 工作台</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#what">是什么</a>
+      <a href="index.html#features">能做什么</a>
+      <a href="index.html#scenarios">谁在用</a>
+      <a href="index.html#industry">行业方案</a>
+      <a href="index.html#videos">看图与视频</a>
+      <a href="index.html#buy">怎么买</a>
+      <a href="index.html#faq">常见问题</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="展开导航">☰</button>
+    <a class="nav-cta" href="https://cloud.tencent.com/act/pro/workbuddy" target="_blank" rel="noopener">免费开始用 ↗</a>
+  </div>
+</header>
+
+<div class="quickbar" role="navigation" aria-label="快捷入口">
+  <div class="wrap quickbar-in">
+    <span class="qb-label">从这里开始</span>
+    <div class="qb-pills">
+      <a class="qb-pill" href="guide.html"><i>01</i><b>新手指南</b><small>0→1 上手 SOP</small></a>
+      <a class="qb-pill" href="index.html#buy-guide"><i>02</i><b>采购指南</b><small>四步完成下单</small></a>
+      <a class="qb-pill" href="training.html"><i>03</i><b>培训需求</b><small>填一份需求清单</small></a>
+      <a class="qb-pill is-current" href="coaching.html" aria-current="page"><i>04</i><b>陪跑需求</b><small>样板场景共创</small></a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<section class="guide-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">介绍首页</a><span>／</span><b>陪跑需求</b></div>
+    <span class="hero-badge"><i></i> COACHING · 样板场景共创</span>
+    <h1>不是替你做完，<br>是<em>一起把一条真实流程跑通</em></h1>
+    <p class="guide-lead">
+      培训解决「会不会用」，陪跑解决「有没有在真实业务里跑出成果」。<br>
+      方法骨架是<strong>进入业务现场、跟随业务人员处理真实事务、把流程逐点拆开</strong>，再选一个高频场景做出样板。
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#c-form">填写并复制陪跑需求 ↓</a>
+      <a class="btn btn-ghost" href="training.html">先看培训需求 ↗</a>
+    </div>
+    <div class="g-stats">
+      <div class="g-stat"><b>4</b><span>条方法骨架</span></div>
+      <div class="g-stat"><b>4</b><span>步共创流程</span></div>
+      <div class="g-stat"><b>Top 3</b><span>可立即立项场景</span></div>
+      <div class="g-stat"><b>1</b><span>个样板交付物</span></div>
+    </div>
+    <p class="small guide-hero-note">本页为需求梳理与方法说明，不是服务报价单、实施合同或效果承诺；范围、角色与排期以双方确认的方案为准。</p>
+  </div>
+</section>
+
+<section class="sec g-sec" id="c-diff">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">01 / 先分清</div>
+      <h2>培训与陪跑，交付物不一样</h2>
+      <p class="lead">常见误区是把「全员听完课」当成落地完成。两者的验收物不同，混在一起会导致没人负责最后那一个真实成果。</p>
+    </div>
+    <div class="g-table-wrap">
+      <table class="g-table">
+        <thead><tr><th></th><th>培训</th><th>陪跑</th></tr></thead>
+        <tbody>
+          <tr><td><b>主要问题</b></td><td>会不会用</td><td>有没有在真实业务里跑出成果</td></tr>
+          <tr><td><b>工作对象</b></td><td>一批人的通用操作</td><td>一条具体业务流程 + 一个部门</td></tr>
+          <tr><td><b>典型交付物</b></td><td>每人 1 个归档交付物、能独立改写模板</td><td>1 个可复用的样板任务 + 流程拆解 + 推广清单</td></tr>
+          <tr><td><b>验收方式</b></td><td>四条上手验收标准</td><td>样板任务在真实数据上跑通并被业务方签收</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><b>顺序建议</b>：先全员配上 → 干出样板 → 全公司照着用。样板没跑通之前，不宜直接铺开全员推广。</div>
+  </div>
+</section>
+
+<section class="sec g-sec" id="c-frame">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">02 / 方法骨架</div>
+      <h2>四条不随项目变化的硬约束</h2>
+      <p class="lead">摘自零点引擎 FDE 案例库验证过的低风险复用骨架。换行业、换部门时，<strong>只替换业务数据与流程，四条保持不变</strong>。</p>
+    </div>
+    <div class="g-frame" id="cFrame"></div>
+    <p class="small" style="margin-top:20px">来源：零点引擎《FDE 案例库》通用 SOP 模板说明（四件套：复用既有系统 / 可解释 / AI 辅助不替代人 / 边界合规前置）。该骨架为方法参考，不构成实施承诺。</p>
+  </div>
+</section>
+
+<section class="sec g-sec" id="c-sop">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">03 / 四步共创</div>
+      <h2>从现场流程，到一个能复用的样板</h2>
+      <p class="lead">每一步都有输出物与验收点。诊断口径参考《WorkBuddy 行政场景 · 六场景需求调研表》（2026-11-12）：按高频、重复、可 AI 化盘点，会后输出 Top 3 可立即立项。</p>
+    </div>
+    <div class="g-steps" id="cSteps"></div>
+    <div class="note"><b>不通过的处理</b>：样板任务卡在「结果不是业务要的」，回到流程拆解补【约束】与【验收】；不要直接加功能或换工具。</div>
+  </div>
+</section>
+
+<section class="sec g-sec" id="c-form">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">04 / 生成清单</div>
+      <h2>把陪跑需求写成一份能对齐的清单</h2>
+      <p class="lead">内容只在本机浏览器里生成，<strong>不会上传、不会提交到任何服务器</strong>。复制后粘贴给对接顾问，作为首轮对齐输入。</p>
+    </div>
+    <div class="g-form" data-form="coaching">
+      <div class="g-form-grid">
+        <label class="fld"><span>企业 / 团队名称</span><input type="text" data-label="企业/团队" data-name="org" placeholder="选填"></label>
+        <label class="fld"><span>业务部门 / 条线 <b>*</b></span><input type="text" data-label="业务部门" data-name="dept" placeholder="如：行政中心 / 财务共享"></label>
+        <label class="fld"><span>现有系统与数据源</span><input type="text" data-label="现有系统与数据源" data-name="systems" placeholder="如：OA、共享盘、腾讯文档、业务数据库"></label>
+        <label class="fld"><span>参与角色</span><input type="text" data-label="参与角色" data-name="roles" placeholder="如：业务负责人 1 人 + 一线 2 人 + 管理员 1 人"></label>
+        <label class="fld"><span>期望启动时间</span><input type="text" data-label="期望启动时间" data-name="time" placeholder="如：本季度内"></label>
+        <label class="fld"><span>合规与边界要求</span><input type="text" data-label="合规与边界" data-name="compliance" placeholder="如：数据不出内网 / 需人工复核"></label>
+      </div>
+      <fieldset class="fld-set">
+        <legend>希望覆盖的环节（可多选）</legend>
+        <div class="fld-checks">
+          <label><input type="checkbox" data-label="覆盖环节" value="现场流程拆解"> 现场流程拆解</label>
+          <label><input type="checkbox" data-label="覆盖环节" value="场景盘点与 Top 3"> 场景盘点与 Top 3</label>
+          <label><input type="checkbox" data-label="覆盖环节" value="样板任务搭建"> 样板任务搭建</label>
+          <label><input type="checkbox" data-label="覆盖环节" value="复盘与模板沉淀"> 复盘与模板沉淀</label>
+        </div>
+      </fieldset>
+      <label class="fld"><span>候选样板场景（1–3 个高频事务）<b>*</b></span><textarea data-label="候选样板场景" data-name="scene" rows="3" placeholder="如：每月部门经费报告汇总、发票整理分类、会议纪要归档"></textarea></label>
+      <label class="fld"><span>现状与痛点</span><textarea data-label="现状与痛点" data-name="pain" rows="2" placeholder="现在怎么做、每月发生几次、单次大概多久、出错代价"></textarea></label>
+      <label class="fld"><span>验收标准（业务方怎么算签收）</span><textarea data-label="验收标准" data-name="accept" rows="2" placeholder="如：用真实数据跑通 1 次，产出物经业务负责人确认可复用"></textarea></label>
+      <div class="g-form-actions">
+        <button type="button" class="btn btn-primary" data-copy-form>生成并复制需求清单</button>
+        <button type="button" class="btn btn-ghost" data-clear-form>清空</button>
+        <span class="g-form-tip" data-copy-tip aria-live="polite"></span>
+      </div>
+      <pre class="g-out" data-form-out hidden></pre>
+    </div>
+  </div>
+</section>
+
+<section class="sec g-sec" id="c-boundary">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">05 / 边界与免责</div>
+      <h2>这一页明确不写什么</h2>
+    </div>
+    <div class="g-boundary">
+      <div class="g-bcard"><b>不承诺周期与人天</b><p>不引用工期、人天、驻场天数与交付批次；范围与排期以双方确认的方案为准。</p></div>
+      <div class="g-bcard"><b>不承诺效果倍数</b><p>不引用「提效 X%」「时长归零」等数字作为承诺；所有量化预期须与客户实际数据核对后另行确认。</p></div>
+      <div class="g-bcard"><b>AI 辅助不替代人</b><p>人定目标、人签结果；涉及审批、对外口径与合规判断的环节保留人工确认。</p></div>
+      <div class="g-bcard"><b>不收集数据</b><p>表单仅在本机生成文本，不上传、不存储、不自动发送；清空页面即消失。</p></div>
+    </div>
+    <div class="g-next">
+      <div><b>下一步走哪条路</b><p>先自己上手 → 新手指南；要组织全员学习 → 培训需求；准备下单 → 采购四步。</p></div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="index.html">← 返回介绍首页</a>
+        <a class="btn btn-ghost" href="index.html#buy-guide">看采购指南 ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="assets/lingdian-logo.svg" alt="零点引擎">
+        <p>本站由 <b style="color:var(--muted)">零点引擎（腾讯云 &amp; WorkBuddy 代理合作伙伴）</b> 整理，用于客户选型、方案宣讲与内部培训。WorkBuddy 为腾讯云产品，商标与产品权益归腾讯所有。</p>
+      </div>
+      <div>
+        <h5>快速入口</h5>
+        <ul>
+          <li><a href="index.html">介绍首页</a></li>
+          <li><a href="guide.html">新手指南</a></li>
+          <li><a href="training.html">培训需求</a></li>
+          <li><a href="index.html#buy-guide">采购四步引导</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 零点引擎 · WorkBuddy 介绍页（合作伙伴整理，非官方站点）</span>
+      <span>本页为需求梳理与方法说明，不构成报价、服务承诺或效果承诺。</span>
+    </div>
+  </div>
+</footer>
+
+<script src="page.js"></script>
+</body>
+</html>

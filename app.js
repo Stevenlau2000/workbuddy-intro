@@ -415,6 +415,16 @@
   $('#purchaseClose').addEventListener('click', closePurchase);
   pModal.addEventListener('click', e => { if (e.target === pModal) closePurchase(); });
 
+  /* 采购指南胶囊 / 二级页回链：定位到 06「购买链接」并打开四步引导 */
+  function goBuyGuide(e) {
+    if (e) e.preventDefault();
+    const t = $('#buyLink') || $('#buy');
+    if (t) t.scrollIntoView({ behavior: 'auto', block: 'center' });
+    openPurchase();
+  }
+  $$('[data-buy-guide]').forEach(el => el.addEventListener('click', goBuyGuide));
+  if (location.hash === '#buy-guide') setTimeout(goBuyGuide, 150);
+
   /* 图片放大：按所在板块分组左右切换 */
   const lbImg = $('#lbImg'), lbCap = $('#lbCap');
   let lbList = [], lbIndex = 0;
