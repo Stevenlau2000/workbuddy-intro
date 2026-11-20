@@ -1164,3 +1164,41 @@ button:hover > .zoom,.gal-item:hover .zoom{opacity:1}
   .crumb{margin-bottom:18px}
   .g-table{min-width:560px}
 }
+
+/* ---------- 固定悬浮快捷按钮组：分享 / 顶部 / 客服 ---------- */
+.fd-dock{position:fixed;right:20px;bottom:96px;z-index:70;display:flex;flex-direction:column;align-items:center;gap:11px}
+.fd-btn{
+  width:56px;height:56px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
+  background:#fff;color:#1a2a4a;border:1px solid rgba(160,190,235,.24);box-shadow:0 6px 20px rgba(0,0,0,.35);
+  text-decoration:none;font-size:10.5px;font-weight:650;line-height:1.15;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease;
+}
+.fd-btn .fd-ico{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fd-btn:hover,.fd-btn:focus-visible{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.45)}
+.fd-btn:hover{background:#FFE200;color:#231916}
+.fd-btn:active{transform:translateY(-1px)}
+.fd-btn[aria-expanded="true"]{background:#FFE200;color:#231916}
+.fd-btn:focus-visible{outline:2px solid #FFE200;outline-offset:3px}
+.fd-sheet[hidden]{display:none}
+.fd-sheet{
+  position:absolute;right:0;bottom:calc(100% + 12px);width:190px;display:flex;flex-direction:column;gap:3px;padding:12px;
+  background:#0f1c33;color:#EDF3FC;border:1px solid rgba(160,190,235,.24);border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,.5);
+  transform-origin:bottom right;animation:fd-in .16s ease-out;
+}
+@keyframes fd-in{from{opacity:0;transform:translateY(6px) scale(.97)}to{opacity:1;transform:none}}
+.fd-sheet-title{margin:2px 6px 6px;font-size:12px;font-weight:700;color:#FFE200;letter-spacing:.02em}
+.fd-opt{display:flex;align-items:center;gap:9px;width:100%;padding:9px 10px;border:0;border-radius:10px;background:transparent;color:#EDF3FC;font-size:13px;font-weight:600;text-align:left;cursor:pointer;transition:background .15s ease}
+.fd-opt .fd-ico{width:18px;height:18px;color:#FFE200}
+.fd-opt:hover,.fd-opt:focus-visible{background:rgba(255,226,0,.14);color:#fff}
+.fd-opt:focus-visible{outline:2px solid #FFE200;outline-offset:-2px}
+.fd-sheet-hint{margin:6px 6px 0;font-size:11px;line-height:1.5;color:#A6B8D4}
+.fd-toast{
+  position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:80;max-width:min(88vw,440px);
+  padding:12px 18px;border-radius:12px;background:#0f1c33;color:#fff;border:1px solid rgba(160,190,235,.24);
+  box-shadow:0 14px 36px rgba(0,0,0,.28);font-size:13px;line-height:1.55;text-align:center;
+}
+.fd-toast[hidden]{display:none}
+@media(max-width:600px){.fd-dock{right:10px;bottom:80px;gap:8px}.fd-btn{width:46px;height:46px;font-size:9.5px;opacity:.94}.fd-btn .fd-ico{width:17px;height:17px}.fd-sheet{width:168px}}
+@media(max-width:360px){.fd-dock{right:6px;bottom:72px;gap:6px}.fd-btn{width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.fd-btn{transition:none}.fd-sheet{animation:none}}
+@media print{.fd-dock,.fd-toast{display:none!important}}
